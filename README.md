@@ -3,6 +3,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/react-gtm-module.svg?style=flat-square)](https://www.npmjs.com/package/react-gtm-module)
 
 # react-gtm-module
+
 ### React Google Tag Manager Module
 
 This is a Javascript module to [React](https://facebook.github.io/react/) based apps that implement Google Tag Manager. It is designed to use [GTM](https://developers.google.com/tag-manager/quickstart) snippet.
@@ -71,7 +72,6 @@ ReactDOM.render(<Router routes={routes} />, app)
 
 ```
 
-
 ### Multiple dataLayer example:
 
 If you need send multiple custom dataLayer you can initialize GTM Module on different components sending different dataLayers
@@ -134,7 +134,6 @@ export default Home
 
 ```
 
-
 ## Events
 
 ### Example:
@@ -188,24 +187,24 @@ TagManager.initialize(tagManagerArgs)
 ```
 
 ##### How can I find auth and preview?
+
 Go to Google Tag Manager -> ADMIN -> Environments -> Actions -> Get Snippet.
 Look for gtm_auth and gtm_preview
 
-##### Don't know to use GTM environments? 
-   - https://support.google.com/tagmanager/answer/6311518
-   - https://www.simoahava.com/analytics/better-qa-with-google-tag-manager-environments/
+##### Don't know to use GTM environments?
 
+    - https://support.google.com/tagmanager/answer/6311518
+    - https://www.simoahava.com/analytics/better-qa-with-google-tag-manager-environments/
 
-
-|Value|Type|Required|Notes|
-|------|-----|-----|-----|
-|gtmId| `String`| Yes | GTM id, must be something like `GTM-000000`.|
-|dataLayer| `Object`| No | Object that contains all of the information that you want to pass to Google Tag Manager.|
-|dataLayerName| `String`| No | Custom name for dataLayer object.|
-|events| `Object`| No | Additional events such as 'gtm.start': new Date().getTime(),event:'gtm.js'.|
-|auth| `String` | No | used to set environments. |
-|preview| `String` | No | used to set environments, something like `env-00`. |
-
+| Value         | Type     | Required | Notes                                                                                    |
+| ------------- | -------- | -------- | ---------------------------------------------------------------------------------------- |
+| gtmId         | `String` | Yes      | GTM id, must be something like `GTM-000000`.                                             |
+| dataLayer     | `Object` | No       | Object that contains all of the information that you want to pass to Google Tag Manager. |
+| dataLayerName | `String` | No       | Custom name for dataLayer object.                                                        |
+| events        | `Object` | No       | Additional events such as 'gtm.start': new Date().getTime(),event:'gtm.js'.              |
+| auth          | `String` | No       | used to set environments.                                                                |
+| preview       | `String` | No       | used to set environments, something like `env-00`.                                       |
+| nonce         | `String` | No       | used to add a [nonce](https://developers.google.com/tag-manager/web/csp)                 |
 
 ### Note:
 

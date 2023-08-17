@@ -1,7 +1,7 @@
 {
-  "name": "react-gtm-module",
-  "version": "2.0.11",
-  "description": "React Google Tag Manager Module",
+  "name": "@pragmaticartist/react-gtm-module-nonce-aware",
+  "version": "2.0.12",
+  "description": "React Google Tag Manager Module with Nonce Aware GTM script",
   "main": "dist/index.js",
   "scripts": {
     "lint": "eslint .",
@@ -12,18 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/alinemorelli/react-gtm"
+    "url": "git+https://github.com/pragmaticartist/react-gtm-module-nonce-aware.git"
   },
-  "author": {
-    "name": "Aline Morelli",
-    "email": "aline.morelliw@gmail.com",
-    "url": "https://github.com/alinemorelli"
-  },
+  "author": "Talima Vale <teamTALIMA@gmail.com> (https://github.com/pragmaticartist)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alinemorelli/react-gtm/issues"
+    "url": "https://github.com/pragmaticartist/react-gtm-module-nonce-aware/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/pragmaticartist/react-gtm-module-nonce-aware#readme",
   "keywords": [
     "react",
     "reactjs",
