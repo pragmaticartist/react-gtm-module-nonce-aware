@@ -1,5 +1,5 @@
 {
-  "name": "@pragmaticartist/react-gtm-module-nonce-aware",
+  "name": "react-gtm-module-nonce-aware",
   "version": "2.0.12",
   "description": "React Google Tag Manager Module with Nonce Aware GTM script",
   "main": "dist/index.js",
