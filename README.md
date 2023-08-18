@@ -196,15 +196,16 @@ Look for gtm_auth and gtm_preview
     - https://support.google.com/tagmanager/answer/6311518
     - https://www.simoahava.com/analytics/better-qa-with-google-tag-manager-environments/
 
-| Value         | Type     | Required | Notes                                                                                    |
-| ------------- | -------- | -------- | ---------------------------------------------------------------------------------------- |
-| gtmId         | `String` | Yes      | GTM id, must be something like `GTM-000000`.                                             |
-| dataLayer     | `Object` | No       | Object that contains all of the information that you want to pass to Google Tag Manager. |
-| dataLayerName | `String` | No       | Custom name for dataLayer object.                                                        |
-| events        | `Object` | No       | Additional events such as 'gtm.start': new Date().getTime(),event:'gtm.js'.              |
-| auth          | `String` | No       | used to set environments.                                                                |
-| preview       | `String` | No       | used to set environments, something like `env-00`.                                       |
-| nonce         | `String` | No       | used to add a [nonce](https://developers.google.com/tag-manager/web/csp)                 |
+| Value         | Type     | Required | Notes                                                                                                                                               |
+| ------------- | -------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| gtmId         | `String` | Yes      | GTM id, must be something like `GTM-000000`.                                                                                                        |
+| dataLayer     | `Object` | No       | Object that contains all of the information that you want to pass to Google Tag Manager.                                                            |
+| dataLayerName | `String` | No       | Custom name for dataLayer object.                                                                                                                   |
+| events        | `Object` | No       | Additional events such as 'gtm.start': new Date().getTime(),event:'gtm.js'.                                                                         |
+| auth          | `String` | No       | used to set environments.                                                                                                                           |
+| preview       | `String` | No       | used to set environments, something like `env-00`.                                                                                                  |
+| nonce         | `String` | No       | used to add a [nonce](https://developers.google.com/tag-manager/web/csp)                                                                            |
+| elementId     | `String` | No       | used to add an [id](https://stackoverflow.com/questions/65100704/gtm-not-propagating-nonce-to-custom-html-tags) for "Custom HTML" tag nonce support |
 
 ### Note:
 
